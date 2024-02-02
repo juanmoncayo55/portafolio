@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafolio - Juan Sebastian Moriones Moncayo</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+	<div class="bar-top">
+		<p class="bar-top__text">
+			<span>< JM ></span> <span> < /JM > </span>
+		</p>
+	</div>
+	<header class="header">
+		<div class="header-container">
+			<h1 class="header-title">Juan Sebastian Moriones Moncayo</h1>
+			<h2 class="header-subtitle">Maquetador Web</h2>
+		</div>
+	</header>
+	<section class="container information">
+		<article class="information-user">
+			<h4 class="information-user__title title">Sobre Mí</h4>
+			<div class="information-user__content">
+				<picture class="information-user__image">
+					<source srcset="build/img/foto-personal.avif" type="image/avif">
+					<source srcset="build/img/foto-personal.webp" type="image/webp">
+					<img lazy="loadding" width="200" height="300" src="build/img/foto-personal.jpg" alt="Foto de perfil" type="image/jpeg">
+				</picture>
+				<div class="information-user__description">
+					<p>¡Hola! Soy Juan Sebastian Moriones, un apasionado por el desarrollo web, cuanto con 1 año de experiencia. Mi enfoque principal es la creación de interfaces gráficas de sitios web o landing page, ya sea usando librerias CSS como bootstrap o materialize, como tambien con código css base (sin librerias) y lenguajes de programación como Node.js, JavaScript, React-Native.</p>
+					<a href="https://github.com/juanmoncayo55/" class="information-user__description-link link-github" target="_blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+					<a href="mailto:juansebastianmoriones@gmail.com" class="information-user__description-link link-email tooltip">
+						<i class="fa-solid fa-at"></i>
+						<span class="tooltiptext">
+							juansebastianmoriones@gmail.com
+						</span>
+					</a>
+				</div>
+			</div>
+		</article>
+		<article class="information-works">
+			<h4 class="information-works__title title">Para mostrar</h4>
+			<p class="information-works__description">Siempre me pregunte como puedo demostrar mis conocimientos si dentro de mi campo laboral me limitan a demostrar mis proyectos realizados, dentro de la libertad de la internet se encuentra un sin fin de diseños y ejemplos gratuitos de páginas y proyectos web. Me hice la tarea de maquetar y experimentar nuevos retos y aquí presento unos ejemplos.</p>
+			<section id="projects-information"></section>
+		</article>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-copy">Todos los derechos reservados, 2024 Juan Sebastian Moriones. Copyright &copy;</p>
+		</div>
+	</footer>
+</body>
+	<script src="build/js/codigo.js"></script>
+</html>
