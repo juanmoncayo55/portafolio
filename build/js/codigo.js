@@ -30,6 +30,11 @@
 				image: "build/img/project6",
 				link: "https://jazzy-crostata-268595.netlify.app",
 				description: "Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML"
+			},
+			{
+				image: "build/img/project7",
+				link: "https://66689f3ae7e06529577b7eb5--glittering-lily-4c830d.netlify.app/",
+				description: "Sitio donde consumo el API de Marvel con el framework React.js junto con TypeScript, uso zustand para manejar el estado de la aplicación, tambien me ayudo de zod para formatear los datos que vienen por la API."
 			}
 		];
 	let templateItem;
