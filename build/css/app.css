@@ -536,7 +536,10 @@ h3 {
   column-gap: 2rem;
 }
 .information-works__work-image {
-  flex: 0 1 550px;
+  flex: 0 1 350px;
+}
+.information-works__work-content{
+   flex: 1;
 }
 .information-works__work-content-link {
   font-weight: 900;
