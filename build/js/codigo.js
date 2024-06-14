@@ -35,6 +35,11 @@
 				image: "build/img/project7",
 				link: "https://66689f3ae7e06529577b7eb5--glittering-lily-4c830d.netlify.app/",
 				description: "Sitio donde consumo el API de Marvel con el framework React.js junto con TypeScript, uso zustand para manejar el estado de la aplicación, tambien me ayudo de zod para formatear los datos que vienen por la API."
+			},
+			{
+				image: "build/img/project8",
+				link: "https://juanmoncayo55.github.io/template-portafolio-bootstrap/",
+				description: "En este nuevo trabajo maqueto un template encontrado en internet donde lo maqueto con bootstrap en su versión 5, uso clases propias y manejo el sistema de FLEXBOX de bootstrap, los derechos son reservados de: 'Start Bootstrap', quien maqueto el template en este caso: Juan Sebastian Moriones Moncayo"
 			}
 		];
 	let templateItem;
