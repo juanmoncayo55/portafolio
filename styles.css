@@ -469,10 +469,54 @@ body {
   background: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
-  max-width: 500px;
+  max-width: 900px;
   text-align: center;
   color: white;
 }
+.modal-content p{
+    margin: 1rem 0;
+    text-align: justify;
+    word-spacing: -2px;
+}
+
+.modal-content__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 1rem;
+}
+
+.modal-content__icons i{
+    font-size: 2.3rem;
+}
+.logo-iphone i{
+    font-size: 2rem;
+    color: #000;
+}
+.modal-content__icons img{
+    width: 70px;
+    height: fit-content;
+}
+.logo-iphone{
+    background: #FFF;
+    border-radius: 50%;
+    padding: 2px;
+    aspect-ratio: 1 / 1;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.cl-html{ color: #F06529; }
+.cl-css{color: #264de4;}
+.cl-js{color: #f7df1e;}
+.cl-gulp{color: #db4c4e;}
+.cl-bootstrap{color: #8019fa;}
+.cl-node{color: #87cf30;}
+.cl-react{color: #08d9ff;}
+.cl-android{color: #43dd88;}
+.cl-php{color: #787cb4;}
 
 .modal .close {
   position: absolute;
