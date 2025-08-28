@@ -42,34 +42,6 @@
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
-        
-        // Handle form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Here you can add your form submission logic
-            // For example, send to a backend API or email service
-            
-            // Show success message (you can customize this)
-            const submitBtn = document.querySelector('.submit-btn');
-            const originalText = submitBtn.innerHTML;
-            
-            submitBtn.innerHTML = '<span>✓ Mensaje Enviado</span>';
-            submitBtn.style.background = '#27ae60';
-            
-            setTimeout(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.style.background = '#ff4757';
-                document.querySelector('.contact-form').reset();
-            }, 3000);
-        });
 
 
         function openModal(id) {
