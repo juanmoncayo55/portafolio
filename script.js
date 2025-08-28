@@ -99,3 +99,60 @@ filterButtons.forEach(btn => {
     });
   });
 });
+
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    // Evita que el formulario se envíe de la manera tradicional
+    event.preventDefault();
+  
+    // URL de tu API en Railway (reemplaza con tu URL real)
+    const apiUrl = 'https://emails-portafolio-production.up.railway.app/enviar-correo';
+  
+    // Obtiene los datos del formulario
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const asunto = document.getElementById('asunto').value;
+    const mensaje = document.getElementById('mensaje').value;
+  
+    // Crea el objeto con los datos a enviar
+    const formData = {
+        nombre: nombre,
+        email: email,
+        asunto: asunto,
+        mensaje: mensaje
+    };
+  
+    // Muestra un mensaje de carga
+    const responseMessage = document.getElementById('responseMessage');
+    responseMessage.style.color = 'gray';
+    responseMessage.textContent = 'Enviando...';
+  
+    // Envía la solicitud POST usando Fetch API
+    fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        // Verifica si la respuesta es exitosa (código 2xx)
+        if (!response.ok) {
+            throw new Error('Ocurrió un error al enviar el mensaje.');
+        }
+        return response.text(); // Lee la respuesta como texto
+    })
+    .then(data => {
+        // Muestra el mensaje de éxito del servidor
+        responseMessage.style.color = 'green';
+        responseMessage.textContent = data;
+        document.getElementById('contactForm').reset(); // Limpia el formulario
+    })
+    .catch(error => {
+        // Muestra el mensaje de error
+        responseMessage.style.color = 'red';
+        responseMessage.textContent = 'Error: ' + error.message;
+        console.error('Error:', error);
+    });
+});
