@@ -103,7 +103,8 @@ document.getElementById('contactForm').addEventListener('submit', async function
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(formData),
+            credentials: true
         });
         console.log(response);
 
