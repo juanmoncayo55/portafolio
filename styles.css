@@ -594,10 +594,13 @@ body {
         }
         
         .contact-content {
-            display: grid;
+            /*display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
-            align-items: start;
+            align-items: start;*/
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
         }
         
         /* Contact Form */
@@ -704,6 +707,11 @@ body {
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            margin: 2rem 0;
+        }
+        .contact-info-header{
+            text-align: center;
         }
         
         .contact-info-header h3 {
