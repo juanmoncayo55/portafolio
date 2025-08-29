@@ -104,7 +104,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(formData),
-            credentials: "include"
+            credentials: "same-origin"
         });
         console.log(response);
 
