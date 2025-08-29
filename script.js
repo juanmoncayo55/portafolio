@@ -91,7 +91,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
         mensaje: mensaje
     };
 
-    console.log(apiUrl);    
+    console.log(apiUrl, formData);    
   
     const responseMessage = document.getElementById('responseMessage');
     responseMessage.style.color = 'gray';
