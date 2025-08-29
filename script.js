@@ -106,6 +106,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
             body: JSON.stringify(formData)
         });
         console.log(response);
+
+        const res2 = await response();
+        console.log(res2);        
         if (!response.ok) {
             throw new Error('Ocurrió un error al enviar el mensaje.');
         }
