@@ -103,13 +103,10 @@ document.getElementById('contactForm').addEventListener('submit', async function
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formData),
-            credentials: "same-origin"
+            body: JSON.stringify(formData)
         });
         console.log(response);
 
-        const res2 = await response();
-        console.log(res2);        
         if (!response.ok) {
             throw new Error('Ocurrió un error al enviar el mensaje.');
         }
