@@ -15,553 +15,186 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-      <div class="logo">
-        <h1>Juan <span>Moriones</span></h1>
+    <header class="Header" id="inicio">
+      <div class="contenedor Header-contenedor">
+        <h1 class="Header-titulo">Juan/Moriones</h1>
+
+        <nav class="Header-navigation">
+          <h1 class="Header-titulo Header-navigation-titulo">Juan/Moriones</h1>
+          <a href="#inicio" class="Header-navigation__link">Inicio</a>
+          <a href="#sobre-mi" class="Header-navigation__link">Sobre Mí</a>
+          <a href="#servicios" class="Header-navigation__link">Servicios</a>
+          <a href="#proyectos" class="Header-navigation__link">Proyectos</a>
+          <a href="#contacto" class="Header-navigation__link">Contacto</a>
+        </nav>
+
+        <button class="Header-menuButton" id="menuButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <nav class="nav">
-        <a href="#hero">Inicio</a>
-        <a href="#services">Servicios</a>
-        <a href="#portafolio">Proyectos</a>
-        <a href="#contact">Contáctame</a>
-      </nav>
-      <!-- <a href="#" class="btn-contacto">Contáctame</a> -->
     </header>
-    
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="./images/numeros-cara.png" alt="Foto de Sebastián Moriones" class="avatar">
-            <h1>Hola, soy <span>Juan Moriones</span></h1>
-            <h2>Desarrollador Web & Móvil</h2>
-            <p>Desarrollador web y móvil especializado en React Native (Expo) y tecnologías modernas para crear soluciones innovadoras, eficientes y escalables. Actualmente finalizando mis estudios en Análisis y Desarrollo de Software y en búsqueda de oportunidades para realizar mis prácticas profesionales, aportar valor y seguir creciendo en el mundo del desarrollo.</p>
-            <div class="buttons">
-                <a href="#proyectos" class="btn primary">Ver mis proyectos</a>
-                <a href="#contacto" class="btn secondary">Contáctame</a>
+    <section class="Hero">
+      <div class="contenedor Hero-contenedor">
+        <div class="Hero-description">
+          <p class="Hero-description__subtext">Hola!, soy Juan Moriones</p>
+          <!-- <h2 class="Hero-description__text">Desarrollador Jr.</h2> -->
+           <h2 class="Hero-description__text">
+            <span></span>
+           </h2>
+          <a href="./images/cv-jsmm.png" download class="Hero-description__button">
+            <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+          </a>
+        </div>
+        <figure class="Hero-figure">
+          <img src="images/silueta.png" alt="Juan Moriones - Full Stack Developer">
+        </figure>
+      </div>
+    </section>
+    <section class="aboutMe" id="sobre-mi">
+      <div class="contenedor aboutMe-contenedor">
+        <div class="aboutMe-container__photo">
+          <h2 class="aboutMe-figure__title">Sobre mi</h2>
+          <figure class="aboutMe-figure">
+            <img src="images/perfil.png" alt="Juan Moriones - Full Stack Developer" class="aboutMe-figure__img">
+          </figure>
+        </div>
+        <div class="aboutMe-description">
+          <div class="aboutMe-description__left">
+            <h2 class="aboutMe-description__text">Sobre mi</h2>
+            <p class="aboutMe-description__prof">Desarrollador Frontend/Backend</p>
+            <p class="aboutMe-description__subtext">Desarrollador de Software con formación en el SENA, pendiente de titulación como Tecnólogo en Análisis y Desarrollo de Software. Cuento con un año y medio de experiencia certificada en desarrollo Frontend, Backend y Desarrollo Móvil Mobile, liderando la creación de interfaces dinámicas con React.js, JavaScript(VanillaJS), HTML5, CSS3 con enfoque en calidad visual, la experiencia de usuario y el rendimiento de las aplicaciones. Aplicaciones móviles con React-Native(Expo).</p>
+            <p class="aboutMe-description__subtext">Recientemente culmine seis meses de experiencia profesional en Neoris, especializándome en microservicios bajo arquitectura APX, donde implementó soluciones de backend con Java y Spring Boot bajo estándares de metodologías agiles. Esta experiencia me permitió fortalecer mis capacidades para trabajar en entornos de alta exigencia, colaborar con equipos multidisciplinarios y entregar soluciones técnicas alineadas con requerimientos corporativos complejos.</p>
+            <h2 class="aboutMe-description__text">Stack Tecnológico</h2>
+          </div>
+          <div class="aboutMe-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-solid fa-database"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="servicios">
+        <div class="contenedor services-contenedor">
+          <div class="services-title__container">
+            <h2 class="services-title">¡Para que soy bueno!</h2>
+            <span class="services-line"></span>
+          </div>
+
+          <article class="services-content">
+            <div class="services-content__item">
+              <span class="services-content__item-span">
+                <i class="fa-solid fa-laptop-code"></i>
+              </span>
+              <p class="services-content__item-title">Interfaces Intuitivas</p>
+              <p class="services-content__item-text">Me especializo en transformar diseños complejos (como archivos Figma) en interfaces web funcionales, rápidas y totalmente responsivas. Mi enfoque está en la fidelidad visual y en crear una navegación fluida que retenga a los usuarios.</p>
             </div>
+            <div class="services-content__item">
+              <span class="services-content__item-span">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </span>
+              <p class="services-content__item-title">Soluciones Móviles</p>
+              <p class="services-content__item-text">Desarrollo apps para iOS y Android desde una sola base de código con React Native. Me enfoco en el rendimiento y en la integración de funcionalidades móviles que aprovechan al máximo el hardware, garantizando una experiencia nativa.</p>
+            </div>
+            <div class="services-content__item">
+              <span class="services-content__item-span">
+                <i class="fa-solid fa-database"></i>
+              </span>
+              <p class="services-content__item-title">Sistemas Robustos</p>
+              <p class="services-content__item-text">Diseño e implemento la lógica de negocio detrás de las aplicaciones. Tengo experiencia creando APIs RESTful eficientes, gestionando bases de datos relacionales (MySQL) y no relacionales (MongoDB), siempre bajo estándares de microservicios.</p>
+            </div>
+          </article>
         </div>
     </section>
-    
-    <!-- Features Section -->
+    <section class="projects sectionGrayOscure" id="proyectos">
+      <div class="projects-container">
+        <h2 class="titleYellow projects-title">¡Lo que he hecho!</h2>
 
-    <section class="features">
-  <div class="skills">
-    <div class="card">
-      <i class="fa-solid fa-rocket"></i>
-      <h3>Desarrollo Rápido</h3>
-      <p>Me gusta trabajar con metodologías modernas para entregar proyectos funcionales y que puedan crecer con el tiempo, sin perder velocidad en el desarrollo.</p>
-    </div>
+        <div class="contenedor projects-content">
+          <div class="projects-content__selection">
+            <p class="projects-content__selection-title">Selecciona una categoría:</p>
+            <select name="projects_slc" id="projects_slc" class="projects-select">
+              <option value="todos">Todos</option>
+              <option value="maquetacion">Maquetación Web</option>
+              <option value="node">Node.js + Express</option>
+              <option value="react">React Native</option>
+              <option value="php">PHP</option>
+            </select>
+          </div>
 
-    <div class="card">
-      <i class="fa-solid fa-bullseye"></i>
-      <h3>Enfoque en Calidad</h3>
-      <p>Procuro escribir código claro y ordenado, pensando en que sea fácil de mantener y que funcione bien a largo plazo.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-lightbulb"></i>
-      <h3>Soluciones Creativas</h3>
-      <p>Busco diferentes maneras de resolver problemas y convertir ideas en aplicaciones que realmente sean útiles.</p>
-    </div>
-
-    <div class="card">
-      <i class="fa-solid fa-handshake"></i>
-      <h3>Trabajo en Equipo</h3>
-      <p>Me adapto bien a diferentes equipos y me gusta mantener una comunicación constante para que el proyecto avance de la mejor manera.</p>
-    </div>
-  </div>
-</section>
-    
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="services-container">
-            <div class="section-header animate-on-scroll">
-                <p class="section-subtitle">Servicios</p>
-                <h2 class="section-title">Ofrezco los mejores servicios</h2>
-            </div>
+          <div id="projects" class="projects-content__allProjects">
             
-            <div class="service-card animate-on-scroll">
-                <div class="service-number"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M64 160C64 124.7 92.7 96 128 96L512 96C547.3 96 576 124.7 576 160L576 400L512 400L512 160L128 160L128 400L64 400L64 160zM0 467.2C0 456.6 8.6 448 19.2 448L620.8 448C631.4 448 640 456.6 640 467.2C640 509.6 605.6 544 563.2 544L76.8 544C34.4 544 0 509.6 0 467.2zM281 273L250 304L281 335C290.4 344.4 290.4 359.6 281 368.9C271.6 378.2 256.4 378.3 247.1 368.9L199.1 320.9C189.7 311.5 189.7 296.3 199.1 287L247.1 239C256.5 229.6 271.7 229.6 281 239C290.3 248.4 290.4 263.6 281 272.9zM393 239L441 287C450.4 296.4 450.4 311.6 441 320.9L393 368.9C383.6 378.3 368.4 378.3 359.1 368.9C349.8 359.5 349.7 344.3 359.1 335L390.1 304L359.1 273C349.7 263.6 349.7 248.4 359.1 239.1C368.5 229.8 383.7 229.7 393 239.1z"/></svg></div>
-                <h3>Desarrollo Frontend</h3>
-                <p>Interfaces modernas y responsivas con React.js, HTML5, CSS3, Bootstrap y Tailwind CSS. Experiencias de usuario excepcionales.</p>
-            </div>
-            
-            <div class="service-card animate-on-scroll">
-                <div class="service-number"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M160 96C124.7 96 96 124.7 96 160L96 224C96 259.3 124.7 288 160 288L480 288C515.3 288 544 259.3 544 224L544 160C544 124.7 515.3 96 480 96L160 96zM376 168C389.3 168 400 178.7 400 192C400 205.3 389.3 216 376 216C362.7 216 352 205.3 352 192C352 178.7 362.7 168 376 168zM432 192C432 178.7 442.7 168 456 168C469.3 168 480 178.7 480 192C480 205.3 469.3 216 456 216C442.7 216 432 205.3 432 192zM160 352C124.7 352 96 380.7 96 416L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 416C544 380.7 515.3 352 480 352L160 352zM376 424C389.3 424 400 434.7 400 448C400 461.3 389.3 472 376 472C362.7 472 352 461.3 352 448C352 434.7 362.7 424 376 424zM432 448C432 434.7 442.7 424 456 424C469.3 424 480 434.7 480 448C480 461.3 469.3 472 456 472C442.7 472 432 461.3 432 448z"/></svg></div>
-                <h3>Desarrollo Backend</h3>
-                <p>APIs robustas con Node.js, Express y PHP. Integración con bases de datos MySQL para aplicaciones escalables.</p>
-            </div>
-            
-            <div class="service-card animate-on-scroll">
-                <div class="service-number"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M144 128C144 92.7 172.7 64 208 64L432 64C467.3 64 496 92.7 496 128L496 512C496 547.3 467.3 576 432 576L208 576C172.7 576 144 547.3 144 512L144 128zM256 504C256 517.3 266.7 528 280 528L360 528C373.3 528 384 517.3 384 504C384 490.7 373.3 480 360 480L280 480C266.7 480 256 490.7 256 504zM432 128L208 128L208 432L432 432L432 128z"/></svg></div>
-                <h3>Aplicaciones Móviles</h3>
-                <p>Apps nativas multiplataforma con React Native. Una sola base de código para iOS y Android con rendimiento nativo.</p>
-            </div>
+          </div>
         </div>
+      </div>
+      <div id="modalContainer"></div>
     </section>
-    
-<section id="portafolio" class="portfolio-section">
-  <h2>Mis Proyectos</h2>
-
-  <!-- Filtros -->
-  <div class="portfolio-filters">
-    <button class="filter-btn active" data-filter="all">Todos</button>
-    <button class="filter-btn" data-filter="web">Maquetaciones Web</button>
-    <button class="filter-btn" data-filter="node">Node.js + Express</button>
-    <button class="filter-btn" data-filter="react">React Native</button>
-    <button class="filter-btn" data-filter="php">PHP</button>
-  </div>
-
-  <!-- Grid de proyectos -->
-  <div class="portfolio-grid">
-
-    <!-- Proyecto Web -->
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project1.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Spartial</h3>
-        <button onclick="openModal('modal1')">Ver más</button>
+    <section class="coreSkills">
+      <div class="coreSkills-contenedor__title">
+        <h2 class="coreSkills-title">Mi Enfoque de Trabajo</h2>
+        <span class="coreSkills-line"></span>
       </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project2.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Introspect</h3>
-        <button onclick="openModal('modal1-a')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project3.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Binary</h3>
-        <button onclick="openModal('modal1-b')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project4.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Portfolio</h3>
-        <button onclick="openModal('modal1-c')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project5.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Working</h3>
-        <button onclick="openModal('modal1-d')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project6.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>.Deliveritta</h3>
-        <button onclick="openModal('modal1-e')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="web" data-aos="fade-up">
-      <img src="./images/proyects/project8.png" alt="Proyecto Web">
-      <div class="portfolio-overlay">
-        <h3>Start Bootstrap</h3>
-        <button onclick="openModal('modal1-f')">Ver más</button>
-      </div>
-    </div>
-
-    <!-- Proyecto Node.js -->
-    <div class="portfolio-card" data-category="node" data-aos="fade-up">
-      <img src="./images/proyects/project-node1.png" alt="API Node.js">
-      <div class="portfolio-overlay">
-        <h3>Desarrollo Backend | API RESTful (Proyectos)</h3>
-        <button onclick="openModal('modal2')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="node" data-aos="fade-up">
-      <img src="./images/proyects/project-node2.png" alt="API Node.js">
-      <div class="portfolio-overlay">
-        <h3>Sistema de Gestión de Tareas y Animales con Node.js, Express y Vanilla JS</h3>
-        <button onclick="openModal('modal2-a')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="node" data-aos="fade-up">
-      <img src="./images/proyects/project-node3.png" alt="API Node.js">
-      <div class="portfolio-overlay">
-        <h3>API CRUD con Node.js, Express y Mongoose para MongoDB</h3>
-        <button onclick="openModal('modal2-b')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="node" data-aos="fade-up">
-      <img src="./images/proyects/project-node3.png" alt="API Node.js">
-      <div class="portfolio-overlay">
-        <h3>API RESTful de Tareas con Node.js, Express y Sequelize</h3>
-        <button onclick="openModal('modal2-c')">Ver más</button>
-      </div>
-    </div>
-
-    <!-- Proyecto React Native -->
-    <div class="portfolio-card" data-category="react" data-aos="fade-up">
-      <img src="./images/proyects/project-rn1.png" alt="App React Native">
-      <div class="portfolio-overlay">
-        <h3>upTask Aplicación móvil con React-Native</h3>
-        <button onclick="openModal('modal3')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="react" data-aos="fade-up">
-      <img src="./images/proyects/project-rn2.png" alt="App React Native">
-      <div class="portfolio-overlay">
-        <h3>Citas Aplicación móvil con React-Native</h3>
-        <button onclick="openModal('modal3-a')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="react" data-aos="fade-up">
-      <img src="./images/proyects/project-rn3.png" alt="App React Native">
-      <div class="portfolio-overlay">
-        <h3>CRUD en Aplicación móvil con React-Native</h3>
-        <button onclick="openModal('modal3-b')">Ver más</button>
-      </div>
-    </div>
-    <div class="portfolio-card" data-category="php" data-aos="fade-up">
-      <img src="./images/proyects/project-php.png" alt="App React Native">
-      <div class="portfolio-overlay">
-        <h3>Sistema de Gestión de Productos y Categorías</h3>
-        <button onclick="openModal('modal4')">Ver más</button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ===== MODALES ===== -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <h2>Spartial</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://playful-axolotl-ecfa64.netlify.app" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/spartial" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-a" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-a')">&times;</span>
-    <h2>Instrospect</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://leafy-jalebi-206d23.netlify.app" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/introspect" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-b" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-b')">&times;</span>
-    <h2>Binary</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://cheerful-syrniki-602715.netlify.app" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/binary" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-c" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-c')">&times;</span>
-    <h2>Portfolio</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-    </div>
-    <a href="https://prismatic-sundae-1122ff.netlify.app/" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/miniport" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-d" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-d')">&times;</span>
-    <h2>Working</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://helpful-kringle-564286.netlify.app" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/bussiness-templated" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-e" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-e')">&times;</span>
-    <h2>.Deliveritta</h2>
-    <p>Landing-Page donde de muestro las habilidades en el maquetado y posicionamiento de elementos en una estructura HTML</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-gulp cl-gulp"></i>
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://jazzy-crostata-268595.netlify.app" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/deliver" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal1-f" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1-f')">&times;</span>
-    <h2>Start Bootstrap</h2>
-    <p>En este nuevo trabajo maqueto un template encontrado en internet donde lo maqueto con bootstrap en su versión 5, uso clases propias y manejo el sistema de FLEXBOX de bootstrap, los derechos son reservados de: 'Start Bootstrap', quien maqueto el template en este caso: Juan Sebastian Moriones Moncayo</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-bootstrap cl-bootstrap"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-    </div>
-    <a href="https://juanmoncayo55.github.io/template-portafolio-bootstrap/" target="_blank" class="btn">Ver Demo</a>
-    <a href="https://github.com/juanmoncayo55/template-portafolio-bootstrap" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2')">&times;</span>
-    <h2>Desarrollo Backend | API RESTful (Proyectos)</h2>
-    <p>Proyecto de backend que implementa una API RESTful con Node.js y el framework Express. La API se conecta a una base de datos MySQL para gestionar información a través de los métodos HTTP (GET, POST, PUT, DELETE), demostrando habilidades en el desarrollo de servicios web y la manipulación de datos.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <img src="./images/mysql.png" alt="Logo MySQL">
-    </div>
-    <a href="https://github.com/juanmoncayo55/ejercicio-api-nodejs-proyectos" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal2-a" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2-a')">&times;</span>
-    <h2>Sistema de Gestión de Tareas y Animales con Node.js, Express y Vanilla JS</h2>
-    <p>Este proyecto es un sistema web simple pero funcional, desarrollado para gestionar el registro de animales y la creación de tareas. El backend está construido con Node.js y Express.js, proporcionando una API RESTful que maneja la lógica del negocio. La persistencia de los datos se gestiona a través de una base de datos SQL administrada con phpMyAdmin, donde se almacenan la información de los animales y las tareas.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-html5 cl-html"></i>
-      <i class="fa-brands fa-css3-alt cl-css"></i>
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <img src="./images/mysql.png" alt="Logo MySQL">
-    </div>
-    <a href="https://github.com/jsmoriones/Backend/tree/main/NodeJS/api-servidor-react" target="_blank" class="btn btn-outline">Ver Código</a>
-    <a href="https://www.youtube.com/watch?v=Y9X5PmPA8CM" target="_blank" class="btn btn-outline">Ver Video</a>
-  </div>
-</div>
-<div id="modal2-b" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2-b')">&times;</span>
-    <h2>API CRUD con Node.js, Express y Mongoose para MongoDB</h2>
-    <p>Este es un proyecto simple que creé para practicar mis habilidades. Es una API hecha con Node.js y Express que me permite hacer las operaciones básicas de CRUD (Crear, Leer, Actualizar y Eliminar). Para guardar los datos, usé una base de datos MongoDB y la conecté con la librería Mongoose, lo que me ayudó a organizar la información fácilmente.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <img src="./images/mongo.png" alt="Logo MongoDB">
-    </div>
-    <a href="https://github.com/juanmoncayo55/CRUD-nodejs-mongoose" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal2-c" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal2-c')">&times;</span>
-    <h2>API RESTful de Tareas con Node.js, Express y Sequelize</h2>
-    <p>En este proyecto hice una API para manejar tareas. Usé Node.js y Express para crear el servidor. Lo más importante que aprendí fue a usar Sequelize, que me ayudó a conectar la API con una base de datos SQL sin tener que escribir las consultas a mano.<br><br>El proyecto me sirvió para practicar cómo se hacen las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y entender cómo funciona una API con una base de datos relacional de forma organizada.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <img src="./images/mysql.png" alt="Logo MySQL">
-    </div>
-    <a href="https://github.com/jsmoriones/Backend/tree/main/NodeJS/tareas-sequalize" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-
-<div id="modal3" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <h2>upTask Aplicación móvil con React-Native</h2>
-    <p>Este proyecto es una aplicación móvil desarrollada con React Native (Expo), diseñada para la gestión de tareas y proyectos. El objetivo principal fue construir una herramienta funcional que me permitiera aplicar y consolidar conocimientos clave en el desarrollo de aplicaciones móviles.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-react cl-react"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <i class="fa-brands fa-android cl-android"></i>
-      <p class="logo-iphone">
-        <i class="fa-brands fa-apple"></i>
-      </p>
-      <img src="./images/graphql.png" alt="Logo graphQL">
-    </div>
-    <a href="https://www.youtube.com/watch?v=npGuB2stueo" target="_blank" class="btn">Ver Video</a>
-    <a href="https://github.com/juanmoncayo55/rn-uptask" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-
-<div id="modal3-a" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3-a')">&times;</span>
-    <h2>Citas Aplicación móvil con React-Native</h2>
-    <p>Este proyecto es una aplicación móvil de ejemplo desarrollada con React Native, que simula un sistema básico de gestión de citas. Fue creado para demostrar la aplicación de conceptos fundamentales en el desarrollo de aplicaciones móviles multiplataforma.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <i class="fa-brands fa-react cl-react"></i>
-      <i class="fa-brands fa-android cl-android"></i>
-      <p class="logo-iphone">
-        <i class="fa-brands fa-apple"></i>
-      </p>
-    </div>
-    <a href="https://youtu.be/coOtyAxvITI" target="_blank" class="btn">Ver Video</a>
-    <a href="https://github.com/juanmoncayo55/rn-simple-citas" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-
-<div id="modal3-b" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal3-b')">&times;</span>
-    <h2>CRUD en Aplicación móvil con React-Native</h2>
-    <p>Este proyecto es una aplicación móvil de ejemplo desarrollada con React Native que implementa las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) para la gestión de clientes. Se diseñó para demostrar mis habilidades en el desarrollo de aplicaciones móviles con una funcionalidad completa.</p>
-    <div class="modal-content__icons">
-      <i class="fa-brands fa-js cl-js"></i>
-      <img src="./images/mysql.png" alt="Logo MySQL">
-      <i class="fa-brands fa-react cl-react"></i>
-      <i class="fa-brands fa-node cl-node"></i>
-      <i class="fa-brands fa-android cl-android"></i>
-      <p class="logo-iphone">
-        <i class="fa-brands fa-apple"></i>
-      </p>
-    </div>
-    <a href="https://youtu.be/sR1wtse6OFo" target="_blank" class="btn">Ver Video</a>
-    <a href="https://github.com/juanmoncayo55/rn-crud-imageupload" target="_blank" class="btn btn-outline">Ver Código</a>
-  </div>
-</div>
-<div id="modal4" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h2>Sistema de Gestión de Productos y Categorías</h2>
-      <p>Desarrollé una aplicación web de gestión de productos que demuestra mis habilidades de desarrollo full-stack. El proyecto permite a los usuarios insertar, visualizar y gestionar productos que dependen de categorías. Para la persistencia de datos, utilicé SQL en un entorno de desarrollo XAMPP, mientras que la lógica del servidor fue gestionada por PHP. En el frontend, opté por React.js para un manejo eficiente del estado y una interfaz de usuario dinámica, cuyo diseño fue creado con Tailwind CSS, permitiendo una presentación limpia y moderna.</p>
-      <div class="modal-content__icons">
-        <i class="fa-brands fa-js cl-js"></i>
-        <i class="fa-brands fa-react cl-react"></i>
-        <i class="fa-brands fa-php cl-php"></i>
-        <img src="./images/mysql.png" alt="Logo MySQL">
-      </div>
-      <a href="https://github.com/juanmoncayo55/frontend-proyectos-crud" target="_blank" class="btn btn-outline">Ver Código</a>
-    </div>
-  </div>
-
-    
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <div class="section-header animate-on-scroll">
-                <p class="section-subtitle">Contacto</p>
-                <h2 class="section-title">¡Trabajemos juntos!</h2>
-                <p>¿Tienes un proyecto en mente? Me encantaría escuchar tu idea y ayudarte a hacerla realidad.</p>
-            </div>
-            
-            <div class="contact-content">
-                <!-- Contact Form -->
-                <!-- <div class="contact-form-container animate-on-scroll">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-                            <label for="nombre">Nombre</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                            <label for="email">Email</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
-                            <label for="asunto">Asunto</label>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-                            <label for="mensaje">Mensaje</label>
-                        </div>
-                        
-                        <input type="submit" value="Enviar" class="submit-btn" />
-                    </form>
-                    <div id="responseMessage"></div>
-                </div> -->
-                
-                <!-- Contact Info -->
-                <div class="contact-info-container animate-on-scroll">
-                    <div class="contact-info-header">
-                        <h3>Información de Contacto</h3>
-                        <p>También puedes contactarme directamente:</p>
-                    </div>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <a href="mailto:juansebastianmoriones@gmail.com">juansebastianmoriones@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div class="contact-text">
-                                <h4>WhatsApp</h4>
-                                <a href="tel:+573122576448">(+57) 312-257-6448</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-text">
-                                <h4>Ubicación</h4>
-                                <span>Popayán, Cauca, Colombia</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="social-links">
-                    <a target="_blank" href="mailto:juansebastianmoriones@gmail.com" class="social-link" title="Email">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M22 4H2v16h20V4zm-2 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                        </svg>
-                    </a>
-                    <a target="_blank" href="https://wa.me/573122576448" class="social-link" title="WhatsApp">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
-                        </svg>
-                    </a>
-                    <a target="_blank" href="https://github.com/juanmoncayo55" class="social-link" title="GitHub">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a target="_blank" href="https://juanmoncayo55.github.io/portafolio" class="social-link" title="Portfolio">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="contenedor coreSkills-contenedor">
+        <div class="coreSkills-card">
+          <span class="coreSkills-card__icon">
+            <i class="fa-solid fa-rocket"></i>
+          </span>
+          <h3>Desarrollo Rápido</h3>
+          <p>Me gusta trabajar con metodologías modernas para entregar proyectos funcionales y que puedan crecer con el tiempo, sin perder velocidad en el desarrollo.</p>
         </div>
+
+        <div class="coreSkills-card">
+          <span class="coreSkills-card__icon">
+            <i class="fa-solid fa-bullseye"></i>
+          </span>
+          <h3>Enfoque en Calidad</h3>
+          <p>Procuro escribir código claro y ordenado, pensando en que sea fácil de mantener y que funcione bien a largo plazo.</p>
+        </div>
+
+        <div class="coreSkills-card">
+          <span class="coreSkills-card__icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </span>
+          <h3>Soluciones Creativas</h3>
+          <p>Busco diferentes maneras de resolver problemas y convertir ideas en aplicaciones que realmente sean útiles.</p>
+        </div>
+
+        <div class="coreSkills-card">
+          <span class="coreSkills-card__icon">
+            <i class="fa-solid fa-handshake"></i>
+          </span>
+          <h3>Trabajo en Equipo</h3>
+          <p>Me adapto bien a diferentes equipos y me gusta mantener una comunicación constante para que el proyecto avance de la mejor manera.</p>
+        </div>
+      </div>
     </section>
+    <footer class="contact" id="contacto">
+      <div class="contenedor contact-contenedor">
+        <h2 class="titleYellow contact-title">¡Hablemos!</h2>
+        
+        <div class="contact-icons">
+          <a href="https://wa.me/573122576448" target="_blank" class="icon-link">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          
+          <a href="mailto:juansebastianmoriones@gmail.com" class="icon-link">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          
+          <a href="https://github.com/juanmoncayo55" target="_blank" class="icon-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="upButton oculto" id="upButton">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 800, once: true });
-</script>
+    <script type="module" src="script.js"></script>
 
 </html>
