@@ -630,6 +630,41 @@ img{
   transform: translateY(0);
 }
 
+/* Dialog */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    margin: auto auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.close-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.aboutMe-btn{
+    border: 0;
+    color: #feb440;
+    background-color: transparent;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.aboutMe-btn:hover{
+    text-decoration: underline;
+}
+
 /*
   Media Queries
 */
